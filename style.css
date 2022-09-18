@@ -1,0 +1,185 @@
+:root{
+    --black : #282c34; 
+    --dont: #2B2B2B;  
+    --dont-know : #191919;
+    --header: #F06000;
+    --text-blue: #11ABB0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: monospace;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    margin-right: 20px;
+}
+
+main{
+    font-family: 'Reem Kufi', sans-serif;
+    background-color: var(--black);
+    text-align: center;
+    color: white;
+}
+
+.hero-sec{
+    height: 100vh;
+}
+
+i{
+    margin-right: 10px;
+}
+
+.home{
+    color: var(--header) !important;
+}
+
+img{
+    height: 120px;
+    border-radius: 10px;
+}
+
+.about-me{
+    background-color: var(--dont);
+    color: white;
+    font-family: inherit;
+}
+
+.border-btm{
+    border-bottom: 4px solid var(--text-blue);
+    width: 130px;
+}
+
+.education{
+    margin: 30px 0 0 30px;
+}
+
+.bottom-border{
+    border-bottom: 3px solid var(--text-blue);
+    width: 130px;
+    padding-bottom: 10px;
+}
+
+.skills-logos{
+    margin: 30px 0 0 30px;
+}
+
+.logo-resize{
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+}
+
+.testimonials{
+    color: white;
+    margin-top: 50px;
+    background-color: var(--dont-know);
+}
+
+.carousel-item{
+    height: 50vh;
+}
+
+.bg-color{
+    background-color: var(--dont-know) !important;
+}
+
+.circle{
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 50%;
+    background-color: #11ABB0;
+}
+
+.flag{
+    height: 50px;
+}
+
+footer{
+    padding: 50px 100px;
+    color: white;
+    background-color: var(--dont);
+}
+
+input[type=email]{
+    color: white;
+    padding: 6px;
+    background-color: var(--black);
+    border: 1px solid var(--text-blue);
+    border-radius: 5px;
+    width: 400px;
+}
+
+textarea{
+    border: 1px solid var(--text-blue);
+    background-color: var(--black);
+    color: white;
+    padding: 6px;
+    resize: none;
+}
+
+@media only screen and (min-width: 740px) and (max-width: 760px) {
+    .about-me-text{
+        padding: 0 20px;
+    }
+}
+
+
+@media only screen and (min-width: 769px) {
+    .about-me{
+        display: flex;
+        padding-left: 300px;
+    }
+    
+    .about-me-text{
+        text-align: left !important;
+        width: 70%;
+    }
+
+    h3{
+        text-align: left !important;
+    }
+
+    .my-image{
+        margin-right: 50px;
+    }
+
+    .contact-details{
+        text-align: left;
+        margin-top: 20px;
+    }
+
+    .contact{
+        flex-direction: row !important;
+    }
+
+    .education{
+        display: flex;
+        flex-direction: row;
+        margin: 80px 0 0 300px;
+    }
+    
+    .skills-logos{
+        display: flex;
+        margin: 30px 0 80px 300px;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px){
+    .education{
+        margin-left: 100px;
+    }
+
+    .about-me{
+        padding-left: 100px;
+    }
+}
