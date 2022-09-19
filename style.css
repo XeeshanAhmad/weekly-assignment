@@ -13,7 +13,7 @@
 }
 
 body{
-    font-family: monospace;
+    font-family: monospace !important;
 }
 
 ul{
@@ -24,11 +24,16 @@ li{
     margin-right: 20px;
 }
 
+
 main{
     font-family: 'Reem Kufi', sans-serif;
     background-color: var(--black);
     text-align: center;
     color: white;
+}
+
+li > a:hover{
+    color: var(--header) !important;
 }
 
 .hero-sec{
@@ -116,16 +121,17 @@ input[type=email]{
     background-color: var(--black);
     border: 1px solid var(--text-blue);
     border-radius: 5px;
-    width: 400px;
+    flex-direction: column;
 }
 
 textarea{
-    border: 1px solid var(--text-blue);
-    background-color: var(--black);
-    color: white;
+    border: 1px solid var(--text-blue) !important;
+    background-color: var(--black) !important;
+    color: white !important;
     padding: 6px;
-    resize: none;
+    width: 300px !important
 }
+
 
 @media only screen and (min-width: 740px) and (max-width: 760px) {
     .about-me-text{
@@ -171,6 +177,26 @@ textarea{
     .skills-logos{
         display: flex;
         margin: 30px 0 80px 300px;
+    }
+
+    input[type=email]{
+        width: 400px;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .form-group{
+        display: flex;
+        justify-content: center;
+    }
+
+    .submit{
+        width: 100px;
     }
 }
 
